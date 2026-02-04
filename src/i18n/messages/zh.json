@@ -1,0 +1,127 @@
+{
+  "metadata": {
+    "title": "雪弈摄影工作室 | SnowChess Photography Studio",
+    "description": "至纯如雪，博弈瞬间。专业商业摄影、研学摄影、婚礼跟拍、旅行摄影服务。"
+  },
+  "nav": {
+    "home": "首页",
+    "works": "作品集",
+    "team": "团队",
+    "blog": "Blog",
+    "schedule": "档期",
+    "contact": "联系",
+    "ai": "AI赋能"
+  },
+  "hero": {
+    "slogan": "至纯如雪，博弈瞬间",
+    "sloganEn": "Pure Vision. Strategic Capture.",
+    "subtitle": "专业摄影服务，记录每一个珍贵瞬间",
+    "cta": "查看作品集",
+    "ctaSecondary": "预约咨询"
+  },
+  "works": {
+    "title": "精选作品",
+    "subtitle": "每一帧都是故事",
+    "categories": {
+      "all": "全部",
+      "annual": "年会活动",
+      "study": "研学",
+      "travel": "旅行",
+      "wedding": "婚礼",
+      "birthday": "生日宴",
+      "aerial": "航拍",
+      "conference": "会议",
+      "event": "活动"
+    },
+    "viewDetails": "查看详情",
+    "loadMore": "加载更多"
+  },
+  "workDetail": {
+    "title": "作品详情",
+    "photographer": "摄影师",
+    "category": "分类",
+    "description": "作品描述",
+    "pricing": "服务定价",
+    "contact": "联系我们"
+  },
+  "team": {
+    "title": "核心团队",
+    "subtitle": "专业摄影师，用心记录每个瞬间",
+    "followXiaohongshu": "关注小红书"
+  },
+  "blog": {
+    "title": "摄影师Blog",
+    "subtitle": "摄影技巧、作品分享、行业见解",
+    "readMore": "阅读更多",
+    "publishedAt": "发布于",
+    "author": "作者",
+    "backToList": "返回列表"
+  },
+  "schedule": {
+    "title": "档期查询",
+    "subtitle": "选择合适的时间，开启您的摄影之旅",
+    "available": "可预约",
+    "busy": "已约满",
+    "today": "今天",
+    "selected": "已选择",
+    "form": {
+      "title": "预约咨询",
+      "name": "姓名",
+      "phone": "联系电话",
+      "type": "摄影类型",
+      "clientLevel": "客户层级",
+      "enterprise": "企业客户",
+      "personal": "个人客户",
+      "date": "期望日期",
+      "message": "留言",
+      "submit": "提交预约",
+      "success": "预约成功"
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "wechat": "添加微信咨询",
+    "scanQR": "扫描二维码添加微信",
+    "phone": "电话",
+    "email": "邮箱",
+    "address": "地址"
+  },
+  "ai": {
+    "title": "AI赋能雪弈",
+    "subtitle": "人工智能技术与专业摄影的完美结合",
+    "features": {
+      "editing": {
+        "title": "AI照片编辑",
+        "desc": "智能调色、构图优化，让每张照片都达到专业水准"
+      },
+      "restoration": {
+        "title": "AI照片修复",
+        "desc": "老照片修复、瑕疵去除，重现珍贵记忆"
+      },
+      "portrait": {
+        "title": "AI人像修图",
+        "desc": "智能美颜、皮肤优化，自然不失真"
+      },
+      "live": {
+        "title": "AI照片直播",
+        "desc": "活动现场实时处理，即时分享精彩瞬间"
+      }
+    }
+  },
+  "footer": {
+    "slogan": "至纯如雪，博弈瞬间",
+    "quickLinks": "快速链接",
+    "services": "服务项目",
+    "contact": "联系我们",
+    "copyright": "© 2024 雪弈摄影工作室 SnowChess Photography Studio. All rights reserved."
+  },
+  "loading": {
+    "text": "正在拍摄中...",
+    "subtitle": "请稍等，精彩即将呈现"
+  },
+  "404": {
+    "title": "正在拍摄中...",
+    "subtitle": "您访问的页面正在后期处理中",
+    "backHome": "返回首页"
+  }
+}

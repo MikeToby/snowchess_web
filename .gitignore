@@ -1,0 +1,31 @@
+# Dependencies
+src/node_modules/
+node_modules/
+
+# Build outputs
+src/.next/
+.next/
+dist/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# IDE
+.trae/
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp

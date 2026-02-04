@@ -1,0 +1,127 @@
+{
+  "metadata": {
+    "title": "SnowChess Photography Studio",
+    "description": "Pure Vision. Strategic Capture. Professional commercial, study tour, wedding, and travel photography services."
+  },
+  "nav": {
+    "home": "Home",
+    "works": "Portfolio",
+    "team": "Team",
+    "blog": "Blog",
+    "schedule": "Booking",
+    "contact": "Contact",
+    "ai": "AI Features"
+  },
+  "hero": {
+    "slogan": "Pure Vision. Strategic Capture.",
+    "sloganEn": "至纯如雪，博弈瞬间",
+    "subtitle": "Professional photography services, capturing every precious moment",
+    "cta": "View Portfolio",
+    "ctaSecondary": "Book Now"
+  },
+  "works": {
+    "title": "Selected Works",
+    "subtitle": "Every frame tells a story",
+    "categories": {
+      "all": "All",
+      "annual": "Annual Events",
+      "study": "Study Tour",
+      "travel": "Travel",
+      "wedding": "Wedding",
+      "birthday": "Birthday",
+      "aerial": "Aerial",
+      "conference": "Conference",
+      "event": "Event"
+    },
+    "viewDetails": "View Details",
+    "loadMore": "Load More"
+  },
+  "workDetail": {
+    "title": "Work Details",
+    "photographer": "Photographer",
+    "category": "Category",
+    "description": "Description",
+    "pricing": "Pricing",
+    "contact": "Contact Us"
+  },
+  "team": {
+    "title": "Our Team",
+    "subtitle": "Professional photographers capturing your moments",
+    "followXiaohongshu": "Follow on Xiaohongshu"
+  },
+  "blog": {
+    "title": "Photographer's Blog",
+    "subtitle": "Photography tips, work sharing, industry insights",
+    "readMore": "Read More",
+    "publishedAt": "Published on",
+    "author": "Author",
+    "backToList": "Back to List"
+  },
+  "schedule": {
+    "title": "Check Availability",
+    "subtitle": "Choose the perfect time for your photography journey",
+    "available": "Available",
+    "busy": "Booked",
+    "today": "Today",
+    "selected": "Selected",
+    "form": {
+      "title": "Book Inquiry",
+      "name": "Name",
+      "phone": "Phone",
+      "type": "Photography Type",
+      "clientLevel": "Client Type",
+      "enterprise": "Enterprise",
+      "personal": "Personal",
+      "date": "Preferred Date",
+      "message": "Message",
+      "submit": "Submit Booking",
+      "success": "Booking Successful"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "wechat": "Add WeChat",
+    "scanQR": "Scan QR code to add WeChat",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address"
+  },
+  "ai": {
+    "title": "AI Empowered",
+    "subtitle": "Where artificial intelligence meets professional photography",
+    "features": {
+      "editing": {
+        "title": "AI Photo Editing",
+        "desc": "Smart color grading and composition optimization"
+      },
+      "restoration": {
+        "title": "AI Photo Restoration",
+        "desc": "Restore old photos and remove imperfections"
+      },
+      "portrait": {
+        "title": "AI Portrait Retouching",
+        "desc": "Smart beauty enhancement with natural results"
+      },
+      "live": {
+        "title": "AI Photo Live",
+        "desc": "Real-time event processing and instant sharing"
+      }
+    }
+  },
+  "footer": {
+    "slogan": "Pure Vision. Strategic Capture.",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "contact": "Contact",
+    "copyright": "© 2024 SnowChess Photography Studio. All rights reserved."
+  },
+  "loading": {
+    "text": "Shooting in progress...",
+    "subtitle": "Please wait, greatness is coming"
+  },
+  "404": {
+    "title": "Shooting in progress...",
+    "subtitle": "The page you're looking for is being processed",
+    "backHome": "Back to Home"
+  }
+}
