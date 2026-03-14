@@ -10,7 +10,7 @@ interface WorksWaterfallProps {
 }
 
 export default function WorksWaterfall({ works, onWorkClick }: WorksWaterfallProps) {
-  const scrollRef = useHorizontalScroll<HTMLDivElement>();
+  useHorizontalScroll<HTMLDivElement>();
   
   // Split works into two rows - alternating vertical and horizontal
   const topRow = works.filter((_, index) => index % 2 === 0).map(work => ({

@@ -5,11 +5,11 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const heroImages = [
-  '/images/hero/hero-1.jpg',
-  '/images/hero/hero-2.jpg',
-  '/images/hero/hero-3.jpg',
-  '/images/hero/hero-4.jpg',
-  '/images/hero/hero-5.jpg',
+  '/images/hero-optimized/hero-1.jpg',
+  '/images/hero-optimized/hero-2.jpg',
+  '/images/hero-optimized/hero-3.jpg',
+  '/images/hero-optimized/hero-4.jpg',
+  '/images/hero-optimized/hero-5.jpg',
 ];
 
 export default function HeroCarousel() {
@@ -39,7 +39,8 @@ export default function HeroCarousel() {
             alt="Hero Background"
             fill
             className="object-cover"
-            priority={true}
+            priority={currentIndex === 0}
+            sizes="100vw"
           />
         </motion.div>
       </AnimatePresence>

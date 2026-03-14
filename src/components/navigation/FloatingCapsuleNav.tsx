@@ -19,8 +19,7 @@ const navItems: NavItem[] = [
   { path: '/works/', label: '作品集', labelEn: 'Works' },
   { path: '/team/', label: '团队', labelEn: 'Team' },
   { path: '/blog/', label: 'Blog', labelEn: 'Blog' },
-  { path: '/schedule/', label: '档期', labelEn: 'Booking' },
-  { path: '/ai/', label: 'AI赋能', labelEn: 'AI' },
+  { path: '/contact/', label: '联系', labelEn: 'Contact' },
 ];
 
 interface FloatingCapsuleNavProps {

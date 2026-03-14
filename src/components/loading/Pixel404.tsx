@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Home, Camera } from 'lucide-react';
+import { Home } from 'lucide-react';
 
 export default function Pixel404() {
   return (

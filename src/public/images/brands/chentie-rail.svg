@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="60" viewBox="0 0 220 60">
+  <rect width="220" height="60" rx="8" fill="white"/>
+  <path d="M28 16c8 0 14 6 14 14s-6 14-14 14S14 38 14 30s6-14 14-14zm0 4c-6 0-10 4-10 10s4 10 10 10 10-4 10-10-4-10-10-10z" fill="#0E63B6"/>
+  <path d="M26 22h4v16h-4zM20 24h16v4H20z" fill="#0E63B6"/>
+  <text x="136" y="27" text-anchor="middle" font-size="18" font-weight="700" fill="#0E63B6" font-family="PingFang SC,Microsoft YaHei,Noto Sans SC,Arial,sans-serif">成铁轨道公司</text>
+  <text x="136" y="45" text-anchor="middle" font-size="12" font-weight="600" fill="#6B7280" font-family="Arial,sans-serif">CHENGTIE RAIL</text>
+</svg>
+

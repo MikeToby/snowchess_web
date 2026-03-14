@@ -2,11 +2,13 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X } from 'lucide-react';
+import { ArrowRight, X } from 'lucide-react';
 
 export interface TeamMember {
   id: string;
+  slug?: string;
   name: string;
   nameEn?: string;
   title: string;
@@ -22,10 +24,12 @@ export interface TeamMember {
 interface TeamCardProps {
   member: TeamMember;
   index?: number;
+  locale?: string;
 }
 
-export default function TeamCard({ member, index = 0 }: TeamCardProps) {
+export default function TeamCard({ member, index = 0, locale = 'zh' }: TeamCardProps) {
   const [showQR, setShowQR] = useState(false);
+  const detailHref = member.slug ? `/${locale}/team/${member.slug}/` : `/${locale}/team/`;
 
   return (
     <>
@@ -67,6 +71,14 @@ export default function TeamCard({ member, index = 0 }: TeamCardProps) {
           <h3 className="text-xl font-bold text-deep-black mb-1">{member.name}</h3>
           <p className="text-gold text-sm font-medium mb-3">{member.title}</p>
           <p className="text-medium-gray text-sm line-clamp-2 mb-4">{member.bio}</p>
+
+          <Link
+            href={detailHref}
+            className="inline-flex items-center gap-2 text-sm font-medium text-deep-black hover:text-gold transition-colors mb-4"
+          >
+            <span>{locale === 'zh' ? '查看摄影师详情' : 'View profile'}</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
 
           {/* Xiaohongshu QR Button */}
           {member.xiaohongshuQR && (

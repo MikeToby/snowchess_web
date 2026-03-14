@@ -2,11 +2,11 @@
 
 import React, { useRef, useState } from 'react';
 import Image from 'next/image';
-import { gsap } from 'gsap';
 
 export interface WorkCardProps {
   id: string;
   image: string;
+  thumbnailImage?: string;
   title: string;
   titleEn?: string;
   category: string;
@@ -16,17 +16,17 @@ export interface WorkCardProps {
   onClick?: () => void;
 }
 
-export default function WorkCard({
-  id,
-  image,
-  title,
-  titleEn,
-  category,
-  categoryLabel,
-  allImages,
-  aspectRatio = 'horizontal',
-  onClick,
-}: WorkCardProps) {
+export default function WorkCard(props: WorkCardProps) {
+  const {
+    image,
+    thumbnailImage,
+    title,
+    titleEn,
+    category,
+    categoryLabel,
+    aspectRatio = 'horizontal',
+    onClick,
+  } = props;
   const cardRef = useRef<HTMLDivElement>(null);
   const [transform, setTransform] = useState('rotateX(0deg) rotateY(0deg)');
   const [glarePosition, setGlarePosition] = useState({ x: 50, y: 50 });
@@ -65,7 +65,7 @@ export default function WorkCard({
   return (
     <div
       ref={cardRef}
-      className="relative perspective-1000 cursor-pointer flex-shrink-0 w-72"
+      className="relative perspective-1000 cursor-pointer flex-shrink-0 w-full max-w-[18rem]"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       onClick={onClick}
@@ -78,7 +78,7 @@ export default function WorkCard({
         }}
       >
         <Image
-          src={image}
+          src={thumbnailImage || image}
           alt={title}
           fill
           className="object-cover"

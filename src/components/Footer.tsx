@@ -4,9 +4,10 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { MapPin, Phone } from 'lucide-react';
 import { SnowchessLogo } from './brand';
 import { WeChatIcon } from './icons/WeChatIcon';
+import { siteConfig } from '@/lib/site';
 
 interface FooterProps {
   locale?: string;
@@ -19,17 +20,17 @@ export default function Footer({ locale = 'zh' }: FooterProps) {
     { href: `/${locale}/`, label: isZh ? '首页' : 'Home' },
     { href: `/${locale}/works/`, label: isZh ? '作品集' : 'Portfolio' },
     { href: `/${locale}/team/`, label: isZh ? '团队' : 'Team' },
+    { href: `/${locale}/about/`, label: isZh ? '关于' : 'About' },
     { href: `/${locale}/blog/`, label: 'Blog' },
-    { href: `/${locale}/schedule/`, label: isZh ? '档期查询' : 'Booking' },
-    { href: `/${locale}/ai/`, label: isZh ? 'AI赋能' : 'AI Features' },
+    { href: `/${locale}/contact/`, label: isZh ? '联系' : 'Contact' },
   ];
 
   const services = [
-    isZh ? '商业摄影' : 'Commercial',
-    isZh ? '婚礼跟拍' : 'Wedding',
     isZh ? '研学摄影' : 'Study Tour',
+    isZh ? '活动摄影' : 'Event',
+    isZh ? '开业摄影' : 'Opening',
+    isZh ? '婚礼跟拍' : 'Wedding',
     isZh ? '旅行跟拍' : 'Travel',
-    isZh ? '航拍' : 'Aerial',
   ];
 
   return (
@@ -47,8 +48,8 @@ export default function Footer({ locale = 'zh' }: FooterProps) {
             </p>
             <p className="text-gray-500 text-sm">
               {isZh 
-                ? '专业摄影服务，记录每一个珍贵瞬间' 
-                : 'Professional photography services, capturing every precious moment'}
+                ? '专注成都活动摄影、研学摄影、开业摄影与跟拍记录' 
+                : 'Chengdu event, study tour, opening, and documentary photography services'}
             </p>
           </div>
 
@@ -93,15 +94,17 @@ export default function Footer({ locale = 'zh' }: FooterProps) {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-gray-400 text-sm">
                 <WeChatIcon className="w-4 h-4 text-gold" />
-                <span>Toby_T_Yuan</span>
+                <span>{siteConfig.wechat}</span>
               </li>
               <li className="flex items-center gap-2 text-gray-400 text-sm">
-                <Mail className="w-4 h-4 text-gold" />
-                <span>miketboy@qq.com</span>
+                <Phone className="w-4 h-4 text-gold" />
+                <a href={`tel:${siteConfig.phone}`} className="hover:text-white transition-colors">
+                  {siteConfig.phone}
+                </a>
               </li>
               <li className="flex items-center gap-2 text-gray-400 text-sm">
                 <MapPin className="w-4 h-4 text-gold" />
-                <span>{isZh ? '成都市金牛区' : 'Chengdu, China'}</span>
+                <span>{isZh ? `服务范围：${siteConfig.serviceArea}` : `Service area: ${siteConfig.serviceArea}`}</span>
               </li>
             </ul>
           </div>
@@ -110,7 +113,7 @@ export default function Footer({ locale = 'zh' }: FooterProps) {
         {/* Bottom */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-500">
-            © 2026 {isZh ? '雪弈摄影工作室' : 'SnowChess Photography Studio'}. All rights reserved.
+            © 2026 {isZh ? siteConfig.legalName : siteConfig.brandNameEn}. All rights reserved.
           </p>
 
           {/* Easter Egg Cats */}

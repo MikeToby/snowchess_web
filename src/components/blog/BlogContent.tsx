@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Calendar, User, ArrowLeft, Share2 } from 'lucide-react';
+import { Calendar, ArrowLeft, Share2 } from 'lucide-react';
 import Link from 'next/link';
 
 interface BlogContentProps {

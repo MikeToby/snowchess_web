@@ -1,9 +1,10 @@
 'use client';
 
 import React, { useState, use } from 'react';
-import { Phone, Mail, MapPin, Clock, Calendar as CalendarIcon, User, Camera, Building2, Send, Check, X } from 'lucide-react';
+import { Phone, MapPin, Clock, Calendar as CalendarIcon, User, Camera, Building2, Send, Check, X } from 'lucide-react';
 import { FloatingCapsuleNav, Footer } from '@/components';
 import { WeChatIcon } from '@/components/icons/WeChatIcon';
+import { siteConfig } from '@/lib/site';
 
 const servicePricing = [
   { name: '商业摄影', nameEn: 'Commercial', price: '1000-3000元/场', icon: Building2 },
@@ -345,9 +346,9 @@ export default function SchedulePage(props: { params: Promise<{ lang: string }> 
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: WeChatIcon, label: isZh ? '微信' : 'WeChat', value: 'Toby_T_Yuan' },
-              { icon: Mail, label: isZh ? '邮箱' : 'Email', value: 'miketboy@qq.com' },
-              { icon: MapPin, label: isZh ? '地址' : 'Address', value: isZh ? '成都市金牛区' : 'Chengdu' },
+              { icon: WeChatIcon, label: isZh ? '微信' : 'WeChat', value: siteConfig.wechat },
+              { icon: Phone, label: isZh ? '电话' : 'Phone', value: siteConfig.phone },
+              { icon: MapPin, label: isZh ? '服务范围' : 'Area', value: isZh ? siteConfig.serviceArea : `Serving ${siteConfig.serviceArea}` },
               { icon: Clock, label: isZh ? '工作时间' : 'Hours', value: '9:00 - 18:00' },
             ].map((item, index) => (
               <div key={index} className="bg-white rounded-xl p-6 text-center shadow-sm">

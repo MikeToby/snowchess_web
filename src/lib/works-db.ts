@@ -1,7 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 import { WorkCardProps } from '@/components/works';
-import imageSize from 'image-size';
+import { toWorkThumbPath } from '@/lib/brand';
+import { imageSizeFromFile } from 'image-size/fromFile';
 
 // Base works configuration (metadata)
 const worksMetadata: Omit<WorkCardProps, 'allImages'>[] = [
@@ -100,14 +101,14 @@ export async function getWorksData(): Promise<WorkCardProps[]> {
         for (const file of allFiles) {
           const filePath = path.join(categoryDir, file);
           try {
-            const dimensions = imageSize(filePath);
+            const dimensions = await imageSizeFromFile(filePath);
             // Check if vertical (height > width)
             if (dimensions && dimensions.height && dimensions.width && dimensions.height > dimensions.width) {
               verticalImages.push(`/images/works/${work.category}/${file}`);
             } else {
               horizontalImages.push(`/images/works/${work.category}/${file}`);
             }
-          } catch (e) {
+          } catch {
             // If checking fails, treat as horizontal/fallback
             horizontalImages.push(`/images/works/${work.category}/${file}`);
           }
@@ -126,6 +127,7 @@ export async function getWorksData(): Promise<WorkCardProps[]> {
 
         return {
           ...work,
+          thumbnailImage: toWorkThumbPath(work.image),
           allImages: images,
           aspectRatio: selectedAspectRatio
         };
@@ -141,6 +143,7 @@ export async function getWorksData(): Promise<WorkCardProps[]> {
 
     return {
       ...work,
+      thumbnailImage: toWorkThumbPath(work.image),
       allImages: images
     };
   }));

@@ -1,13 +1,27 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import '../../globals.css';
+import { buildMetadata } from '@/lib/seo';
+import type { Locale } from '@/lib/site';
 
-const inter = Inter({ subsets: ['latin'] });
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const locale = lang as Locale;
 
-export const metadata: Metadata = {
-  title: '雪弈摄影工作室 | SnowChess Photography Studio',
-  description: '至纯如雪，博弈瞬间。专业商业摄影、研学摄影、婚礼跟拍、旅行摄影服务。',
-};
+  return buildMetadata({
+    locale,
+    title:
+      locale === 'zh'
+        ? '成都活动摄影_成都研学摄影_雪弈摄影工作室'
+        : 'SnowChess Photography Studio | Chengdu Event and Study Tour Photography',
+    description:
+      locale === 'zh'
+        ? '雪弈摄影工作室专注成都活动摄影、研学摄影、开业摄影、婚礼跟拍与旅行跟拍，提供本地拍摄策划、现场记录与高效交付服务。'
+        : 'SnowChess provides Chengdu event photography, study tour coverage, opening photography, wedding, and travel documentary shooting.',
+  });
+}
 
 export async function generateStaticParams() {
   return [{ lang: 'zh' }, { lang: 'en' }];
@@ -15,15 +29,8 @@ export async function generateStaticParams() {
 
 export default async function RootLayout({
   children,
-  params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ lang: string }>;
 }) {
-  const { lang } = await params;
-  return (
-    <html lang={lang}>
-      <body className={inter.className}>{children}</body>
-    </html>
-  );
+  return children;
 }

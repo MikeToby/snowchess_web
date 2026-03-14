@@ -1,4 +1,5 @@
 import { WorkCardProps } from '@/components/works';
+import { toWorkThumbPath } from '@/lib/brand';
 
 // Helper to generate 18 images for a category
 const generateImages = (category: string) => {
@@ -9,6 +10,7 @@ export const allWorks: WorkCardProps[] = [
   { 
     id: '1', 
     image: '/images/works/annual/1.jpg', 
+    thumbnailImage: toWorkThumbPath('/images/works/annual/1.jpg'),
     title: '年度盛典', 
     titleEn: 'Annual Gala', 
     category: 'annual', 
@@ -18,6 +20,7 @@ export const allWorks: WorkCardProps[] = [
   { 
     id: '2', 
     image: '/images/works/study/1.jpg', 
+    thumbnailImage: toWorkThumbPath('/images/works/study/1.jpg'),
     title: '自然探索', 
     titleEn: 'Nature Exploration', 
     category: 'study', 
@@ -27,6 +30,7 @@ export const allWorks: WorkCardProps[] = [
   { 
     id: '3', 
     image: '/images/works/travel/1.jpg', 
+    thumbnailImage: toWorkThumbPath('/images/works/travel/1.jpg'),
     title: '山川湖海', 
     titleEn: 'Mountains & Seas', 
     category: 'travel', 
@@ -36,6 +40,7 @@ export const allWorks: WorkCardProps[] = [
   { 
     id: '4', 
     image: '/images/works/wedding/1.jpg', 
+    thumbnailImage: toWorkThumbPath('/images/works/wedding/1.jpg'),
     title: '浪漫婚礼', 
     titleEn: 'Romantic Wedding', 
     category: 'wedding', 
@@ -45,6 +50,7 @@ export const allWorks: WorkCardProps[] = [
   { 
     id: '5', 
     image: '/images/works/birthday/1.jpg', 
+    thumbnailImage: toWorkThumbPath('/images/works/birthday/1.jpg'),
     title: '生日庆典', 
     titleEn: 'Birthday Celebration', 
     category: 'birthday', 
@@ -54,6 +60,7 @@ export const allWorks: WorkCardProps[] = [
   { 
     id: '6', 
     image: '/images/works/aerial/1.jpg', 
+    thumbnailImage: toWorkThumbPath('/images/works/aerial/1.jpg'),
     title: '航拍视角', 
     titleEn: 'City Overview', 
     category: 'aerial', 
@@ -63,6 +70,7 @@ export const allWorks: WorkCardProps[] = [
   { 
     id: '7', 
     image: '/images/works/annual/2.jpg', 
+    thumbnailImage: toWorkThumbPath('/images/works/annual/2.jpg'),
     title: '企业年会', 
     titleEn: 'Corporate Event', 
     category: 'annual', 
@@ -72,6 +80,7 @@ export const allWorks: WorkCardProps[] = [
   { 
     id: '8', 
     image: '/images/works/study/2.jpg', 
+    thumbnailImage: toWorkThumbPath('/images/works/study/2.jpg'),
     title: '研学之旅', 
     titleEn: 'Study Tour', 
     category: 'study', 

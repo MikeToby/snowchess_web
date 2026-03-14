@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
+  <rect width="200" height="60" fill="white" rx="8"/>
+  <path d="M26 18c7 0 12 5 12 12s-5 12-12 12c-4 0-8-2-10-5l5-3c1 2 3 3 5 3 4 0 7-3 7-7s-3-7-7-7c-2 0-4 1-5 3l-5-3c2-3 6-5 10-5z" fill="#E53935"/>
+  <text x="118" y="28" text-anchor="middle" font-size="18" font-weight="700" fill="#E53935" font-family="PingFang SC,Microsoft YaHei,Noto Sans SC,Arial,sans-serif">新东方教育</text>
+  <text x="118" y="45" text-anchor="middle" font-size="12" font-weight="600" fill="#6B7280" font-family="Arial,sans-serif">NEW ORIENTAL</text>
+</svg>
